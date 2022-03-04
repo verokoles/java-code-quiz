@@ -1,8 +1,43 @@
 var timerEl = document.getElementById('countdown');
+var beginButtonEl = document.getElementById('generate');
+var containerEl = document.querySelector('container');
+var counterEl = 
+//setinterval, settimeout
+var view = 'begin'; 
+var 
+function beginPage {
 
-// ceate function for timer
-function countdown() {
-    var timeLeft = 
+}
+
+function quizPage() {}
+
+function resultPage() {}
+
+//step 1
+beginButtonEl.onlick = function() {
+    containerEl.innerHTML = beginPage();
+    quizPage();
+    startTimer();
+}
+
+
+//Step 2
+// // ceate function for timer
+function startTimer() {
+    var counterTimer = setInterval(() => {
+        counter -= 1;
+        // update the counter to page
+        counterEl.innerHTML = counter;
+
+        if (counter === 0) {
+            // is it finished ?
+            clearInterval(counterTimer);
+            containerWl.innerHTML = resultPage();
+        }
+        
+
+    }, 1000);
+}
 
 function generateQuiz(questions, quizContainer, results, submit)
 
@@ -37,3 +72,10 @@ function generateQuiz(questions, quizContainer, results, submit)
     // B. click
     // C. onclick
     // D. both B and C   **
+
+   /* // when a user clicks on any of questions 
+    //check to see if the answer is correct or not
+    // if its wrong, take away 10 seconds
+    // counter-=10;
+
+    /*
