@@ -15,6 +15,10 @@
     height: 100px;
     text-align: center;
   }
+  .page-title span {
+    color: rgb(141, 22, 22);
+    font-style: italic;
+  }
   
   #main {
     margin-bottom: 20px;
@@ -33,11 +37,7 @@
     display: inline-block;
     font-size: 22px;
     line-height: 22px;
-    margin: 100px 14px 16px 850px;
-    padding: 14px 34px;
-    text-align: center;
-    cursor: pointer;
-
+    margin: 150px 14px 16px 885px;
   }
   .btn {
     border: none;
