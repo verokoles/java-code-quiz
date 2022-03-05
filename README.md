@@ -46,4 +46,4 @@
 * [JavaScript HTML DOM](https://www.w3schools.com/js/js_htmldom.asp)
 * [Pointers on making a JavaScript powered quiz from scratch](https://simplestepscode.com/javascript-quiz-tutorial/#:~:text=The%20following%20JavaScript%20will%20make%20that%20happen%3A%20%2F%2F,the%20parameters.%20Step%204%3A%20Put%20it%20all%20together)
 * [Onclick and Evnet Listeners](https://www.bitdegree.org/learn/onclick-javascript)
-* []()
+* [Usage of Back Ticks `` in JavaScript](https://thebittheories.com/the-3-advantages-of-backtick-literals-in-javascript-f6beade4a9cf)
