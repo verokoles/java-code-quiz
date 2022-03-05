@@ -1,6 +1,7 @@
 # JavaScript Quiz
 
 ## Purpose:
+ * To built a JavaScript-powered, multiple-choice, timed quiz for users and log high scores
 
   ## Table of Contents:
 1. [ Description ](#desc)
@@ -12,7 +13,11 @@
 
 <a name="desc"></a>
  ## 1. Description
-  * 
+  * A user is given a timed mutiple choice quiz on JavaScript.
+  * Once the timer begins, they are prompted to choose the correct answer for 5 questions.
+  * If the user gets a question wrong, they are reduced time by ten seconds.
+  * If their answer is correct, they move on. 
+  * Once the timer is at 0, or if the the user finishes before 120 seconds, the score gets logged and the user can type in their initials.
 
 <a name="built-with"></a>
  ## 2. Built With
@@ -22,17 +27,29 @@
 
 <a name="steps"></a>
  ## 3. Steps
+ First, the HTML is set up. The classes in the <div> must match up with the CSS properties.
+ ![]()
+ ![]()
+
+ Then the JavaScript is set up with variables to match up to corresponding functions.
+ ![]()
+
+A JS template allows the back ticks (``) to pull up the whole section to return information on a page.
+
+ ![]()
+
+ Timer is set at 2 minutes once the user clicks 'Begin', and starts counting down as they choose their answer.
+ ![]()
+
+Once the timer is up, or the user is done taking the test they are taken to the Scores page after clicking 'Submit.
+ ![]()
+
+ From that page they can either exit or restart the test by clicking 'Restart' or refreshing the page.
+ ![]()
 
  ![]()
  ![]()
- ![]()
- ![]()
- ![]()
- ![]()
- ![]()
- ![]()
- ![]()
- ![]()
+ 
 
 
  <a name="link-to-my-page"></a>

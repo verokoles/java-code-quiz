@@ -3,15 +3,19 @@ var beginButtonEl = document.getElementById('generate');
 var containerEl = document.querySelector('.container');
 var counterEl = document.getElementById('counter');
 console.log(containerEl);
+//create submit button variable
+var submitButtonEl = document.getElementById('submit');
 
+// restart quiz button variable
+var restartButtonEl = document.getElementById('restart');
+
+//create counter variable
 var counter = 120;
 var correctAnswers = 0;
 var wrongAnswers = 0;
 
 var quizCount = 0;
 
-//setinterval, settimeout
-var view = 'begin'; // quiz, results, begin
 
 function beginPage() {
     console.log(beginPageTemplate);
@@ -31,8 +35,29 @@ function quizPage() {
     containerEl.innerHTML = generateQuiz();
     
 }
+submitButtonEl.onclick = function () {
+    containerEl.innerHTML = submitPage();
+      resultPage();
+
+}
+//submit the quiz
+function submitPage() {
+    console.log(submitPageTemplate);
+    return `
+    <h1>Result Page</h1>
+    <p>Correct Answer: ${correctAnswers}</p>
+    <p>Wrong Answer: ${wrongAnswers}</p>
+    <h2>High Scores</h2>
+ <p>Log your initials to save high score!</p>
+           `;
+   }
 
 
+submitButtonEl.onclick = function() {
+    containerEl.innerHTML = submitPage();
+      resultPage();
+}
+//setinterval, settimeout
 // Step 3
 function startTimer() {
     var counterTimer = setInterval(() => {
@@ -55,6 +80,34 @@ function resultPage() {
  <h1>Result Page</h1>
  <p>Correct Answer: ${correctAnswers}</p>
  <p>Wrong Answer: ${wrongAnswers}</p>
+ <h2>High Scores</h2>
+ <p>Log your initials to save high score!</p>
+
+ //initials
+// const initialForm = document.getElementById("initials");
+// const scoreButton = document.getElementById("set-score");
+
+// scoreButton.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     const initial = initialForm.initial.value;
+
+//     if (initial === "ABCDEFGHIJKLNMOPQRSTUVWXYZ" || "abcdefghijklmnopqrstuvwxyz") {
+//         alert("Your high score has been logged!");
+//         location.reload();
+//     }
+        `;
+}
+//restart quiz
+function restartQuiz() {
+    console.log(restartQuizTemplate);
+    return restartQuizTemplate;
+}
+
+
+function restartQuiz() {
+    return `
+ <h1>High Scores</h1>
+ <p>Correct Answer: ${correctAnswers}</p>
         `;
 }
 //quiz questions and answers
@@ -67,9 +120,10 @@ const quizzes = [
             "focus in",
             "focus out"
         ],
-        correctChoice: 0
+        correctChoice: 1
     },
     {
+    
         title: "2. What's true of undefined values and undefines variables in JavaScript?",
         choices: [
             "undefined is an example of a keyword",
@@ -77,7 +131,7 @@ const quizzes = [
             "if an undefined variable is read, an undefined value is returned",
             "if an undefined variable is read, a defined value is returned"
         ],
-        correctChoice: 0
+        correctChoice: 2
     },
     {
         title: "3. What symbol is used to break the script in JS to pseudocode?",
@@ -87,7 +141,7 @@ const quizzes = [
             "<-->",
             "{}"
         ],
-        correctChoice: 0
+        correctChoice: 1
     },
     {
         title: "4. An event that is fired when a pointing device (e.g.,a mouse) is pressed and released on a single element?",
@@ -97,7 +151,8 @@ const quizzes = [
             "onclick",
             "both B and C"
         ],
-        correctChoice: 0
+        correctChoice: 3
+    
     },
     {
         title: "5. what are global variables?",
