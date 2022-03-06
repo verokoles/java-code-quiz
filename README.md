@@ -27,28 +27,33 @@
 
 <a name="steps"></a>
  ## 3. Steps
- First, the HTML is set up. The classes in the <div> must match up with the CSS properties.
- ![]()
- ![]()
+ First, the HTML is set up the classes in the < div> must match up with the CSS properties.
+
+ ![HTML code](assets/HTML_quiz.png)
+ ![CSS code](assets/CSS-quiz.png)
 
  Then the JavaScript is set up with variables to match up to corresponding functions.
- ![]()
+ ![JS file code](assets/java-quiz-code.png)
 
 A JS template allows the back ticks (``) to pull up the whole section to return information on a page.
+Back tick literals, as they are called, signal the JavaScript parser to look for multi-line strings. Template literals make the JS cleaner when requesting an API, and just storing them in another .js file. I linked it right before the main JS file in HTML using < script>. 
+<!-- //</header><script src="assets/template. js"></script><script src="assets/script. js"></script></body>// -->
 
- ![]()
+ ![Template page](assets/template.png)
 
  Timer is set at 2 minutes once the user clicks 'Begin', and starts counting down as they choose their answer.
- ![]()
+ ![Begin](assets/java-quiz-begin.png)
+
+ The user navigates through the quiz choosing the answers they think are correct. 
+ If they choose a correct answer, the JavaScript code shows that the 'onclick' for answer chosen as well as the right and wrong answers. If the quiz taker answers wrong,
+ then the 'if' statement holds how the javaScript handles a wrong answer logging in +1 incorrect and also taking away ten seconds with every incorrect answer.
+  ![Choosing the right answer in browser view]()
+  ![function for choosing the answer in JS]()
 
 Once the timer is up, or the user is done taking the test they are taken to the Scores page after clicking 'Submit.
- ![]()
+  ![Results](assets\scores-page.png)
 
  From that page they can either exit or restart the test by clicking 'Restart' or refreshing the page.
- ![]()
-
- ![]()
- ![]()
  
 
 
