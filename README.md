@@ -59,7 +59,8 @@ Once the timer is up, or the user is done taking the test they are taken to the 
 
  <a name="link-to-my-page"></a>
  ## 4. Link To Project in My Github Pages:
-    [My JavaScript Quiz]()
+
+[My JavaScript Quiz](https://verokoles.github.io/java-code-quiz/)
 
 <a name="help"></a>
  ## 5. Helpful Links
