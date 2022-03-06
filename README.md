@@ -51,7 +51,7 @@ Back tick literals, as they are called, signal the JavaScript parser to look for
   ![function for choosing the answer in JS]()
 
 Once the timer is up, or the user is done taking the test they are taken to the Scores page after clicking 'Submit.
-  ![Results](assets\scores-page.png)
+  ![Results](assets/scores-page.png)
 
  From that page they can either exit or restart the test by clicking 'Restart' or refreshing the page.
  
