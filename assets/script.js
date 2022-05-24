@@ -168,7 +168,7 @@ const quizzes = [
     },
     {
     
-        title: "2. What's true of undefined values and undefines variables in JavaScript?",
+        title: "2. What's true of undefined values and undefined variables in JavaScript?",
         choices: [
             "undefined is an example of a keyword",
             "they are variables with a value",
@@ -199,7 +199,7 @@ const quizzes = [
     
     },
     {
-        title: "5. what are global variables?",
+        title: "5. What are global variables?",
         choices: [
             "variables avaiible through the code with no scope",
             "another name for keyword 'this'",
@@ -295,7 +295,7 @@ function handleQuiz(targetEl) {
        
     } else {
         // TODO - Save user to local storage
-        username = prompt("what's your username")
+        username = prompt("Enter your username")
 
         scores.push({
             username: username,
